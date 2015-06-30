@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Java_HW4_Problem_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Result:" translatesAutoresizingMaskIntoConstraints="NO" id="7FW-Lu-REP">
+                                <rect key="frame" x="16" y="275" width="568" height="205"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Input:" translatesAutoresizingMaskIntoConstraints="NO" id="tDI-8E-aqB">
+                                <rect key="frame" x="16" y="20" width="568" height="128"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-kX-2gB">
+                                <rect key="frame" x="16" y="428" width="103" height="30"/>
+                                <state key="normal" title="Sort numbers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="piA-WR-G0p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tDI-8E-aqB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="I8i-nv-GIV"/>
+                            <constraint firstItem="7FW-Lu-REP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="O6c-aQ-xfe"/>
+                            <constraint firstItem="7FW-Lu-REP" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="QQ0-RZ-XkI"/>
+                            <constraint firstItem="tDI-8E-aqB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cuA-OO-zzq"/>
+                            <constraint firstItem="qbZ-kX-2gB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="dGU-EH-BTt"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qbZ-kX-2gB" secondAttribute="bottom" constant="63" id="lFN-Ta-Tk2"/>
+                            <constraint firstAttribute="width" secondItem="tDI-8E-aqB" secondAttribute="width" id="rlu-d1-JHE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="tDI-8E-aqB" id="1CM-3D-iqL"/>
+                        <outlet property="outputTextField" destination="7FW-Lu-REP" id="mDy-yV-3WH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
